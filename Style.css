@@ -1,0 +1,81 @@
+#Principal{
+    background-image: url(Images/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#Header{
+    background: rgb(51, 51, 51);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    background-image: url(Images/fundo2.png);
+    background-attachment: fixed;
+    background-size: 1000px 290px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.Body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: center;
+    
+    margin: auto;
+    width: 60%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.Images{
+    width: 300px;
+    padding: 20px;
+}
+
+.NavMenu{
+    padding: 10px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.format{
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: bisque;
+    padding: 10px;
+
+}
+
+.Format-Title{
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: bisque;
+    font-weight: 900;
+    font-size: 38px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Medio{
+    width: 95px;
+}
+
+.Centralizado{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.lateral{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.prod-prev{
+    width: 50%;
+    border-radius: 40% 0px;
+}
