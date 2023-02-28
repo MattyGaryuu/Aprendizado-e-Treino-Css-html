@@ -1,3 +1,7 @@
+a{
+    padding: 50px;
+}
+
 #Principal{
     background-image: url(Images/fundo.png);
     background-position: center;
@@ -8,7 +12,7 @@
 
 #Header{
     background: rgb(51, 51, 51);
-    width: 60%;
+    width: 70%;
     margin: auto;
     text-align: center;
     background-image: url(Images/fundo2.png);
@@ -24,7 +28,7 @@
     background-size: center;
     
     margin: auto;
-    width: 60%;
+    width: 70%;
     box-shadow: 0px 0px 10px black;
     border-radius: 0px 0px 10px 10px;
 }
@@ -72,10 +76,24 @@
 .lateral{
     flex-direction: row;
     display: flex;
-    align-items: center;
+    margin: auto;
+    width: 70%;
 }
 
 .prod-prev{
     width: 50%;
     border-radius: 40% 0px;
+}
+
+.item{
+    padding: 30px; 
+    background-color: rgb(46, 46, 46);
+    border-radius: 50px;
+    width: 150px;
+    margin: 5px
+}
+
+.Format2{
+    font-size: 15px;
+    padding: 2px;
 }
