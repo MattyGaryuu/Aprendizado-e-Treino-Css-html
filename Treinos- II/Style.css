@@ -1,0 +1,27 @@
+/* conteudo de caixa*/
+
+.Conteudo{
+    border: 1px solid red;
+    /*Espacamento interno*/
+    /*padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;*/
+    padding: 10px 10px 15px 10px;
+
+    /* Espacamento externo*/
+    /*margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;*/
+    margin: 10px 10px 15px 10px;
+    /*  margin collapese: as margens de 2 box se sobrepoe e nao somam, sempre sobresaindo a maior margem */
+
+    text-align: center;
+    width: 100px;
+    align-items: 30px;
+}
+
+h2{
+    margin: 0px;
+}
