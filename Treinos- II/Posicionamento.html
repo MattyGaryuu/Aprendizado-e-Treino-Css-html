@@ -4,13 +4,50 @@
 
     <head>
 
-        <title>Posicionamentos</title>
+        <title>Posicionamentos (statics, relative, absolute, fixed)</title>
         <meta charset="utf-8">
         <link rel="shortcut icon" href="Images/Peak.webp">
         <link rel="stylesheet" type="text/css" href="Style.css">
         <style type="text/css">
 
+            body{
+                background-color: gainsboro;
+            }
 
+            #Conteiner{
+                background-color: white;
+                width: 800px;
+                margin: 10px auto;
+                padding: 10px;
+                position: relative;
+            }
+
+            .relative{
+                border: 1px solid red;
+                width: 200px;
+                position: relative;
+                top: -20px;
+                left: 80px;
+                /*Baseado na posicao inicial do elemento*/
+            }
+
+            .absolute{
+                border: 1px solid red;
+                width: 200px;
+                position: absolute;
+                top: 50px;
+                left: 500px;
+                /*Absolute permite que uma caixa seja removida do fluxo do documento e alinhe baseado n oconteiner, se posiciona baseado no conteiner apenas se ele for diferente de static*/
+            }
+
+            .fixed{
+                border: 1px solid red;
+                width: 200px;
+                position: fixed;
+                top: 150px;
+                right: 500px;
+                /*Baseado Na Tela*/
+            }
 
         </style>
 
@@ -18,7 +55,41 @@
 
     <body>
 
-
+        <div id="Conteiner">
+            <h1 style="position: static;">Posicionamentos</h1>
+            <p style="position: static;">estatico</p>
+            <p class="absolute">absolute</p>
+            <p class="relative">relative</p>
+            <p class="fixed">fixed</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+            <p style="position: static;">Alo marilene</p>
+        </div>
 
     </body>
 
