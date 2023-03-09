@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Seletores Avançados</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*Seletor universal: se aplica a todos os elementos da pagina*/
+            *{
+                background-color: azure;
+            }
+
+            /*Seletor de texto: seleciona elementos pelo tipo*/
+            p{
+                background-color: white;
+            }
+
+            h1, p{
+                margin-left: 5px;
+                width: fit-content;
+            }
+
+            hr{
+                border-color: blue;
+            }
+
+            /*Seletor de Classes: Seleciona os elementos pertencentes a mesma classe*/
+            .vermelho{
+                color: crimson;
+            }
+
+            p.vermelho{ /*Seleciona apenas os elemtnos p da classe vermelho*/
+                background-color: bisque;
+            }
+
+            span.teste{
+                font-size: 9px;
+                position: relative;
+                top: -3px;
+                border-width: 0px;
+            }
+
+            /*Seletor de ID: Seleciona os elementos com o ID especificado, por masi que possa ser usado em mais de um componente, é recomendado usar apenas em 1 elemento*/
+            #Testando{
+                background-color: blueviolet;
+            }
+
+            /*Seletor de filho: Seleciona um elemento que é filho direto de outro
+            li>p = Selecionar uma tag <p> que eh filho de uma tag <li>*/
+
+            li>p{
+                background-color: chocolate;
+            }
+
+            li>span>h1{
+                background-color: darkslategray;
+                font-size: 20px;
+            }
+
+            /*Seletor de descendente: Seleciona um elemento que é filho de outro, não precisa ser descendente direto
+            li p = Selecionar uma tag <p> que eh filho de uma tag <li>*/
+            
+            p a{
+                color: chartreuse;
+                width: fit-content;
+                background-color: black;
+            }
+
+            /*Seletor de irmão Adjacente: Seleciona um elemento que é proximo de outro
+            h2+p = Selecionar o primeiro elemento <p> depois de qualquer elento <h2>*/
+
+            h2+p{
+                background-color: black;
+                color: aqua;
+            }
+
+            /*Seletor de irmão geral: Seleciona qualquer elemento elemento apos o especificado primeiro*/
+
+            h3~p{
+            background-color: aqua;
+            color: black;
+            }
+
+            h3~span>p{
+                background-color: black;
+                color: blue;
+            }
+            
+
+        </style>
+    </head>
+        
+    <body>
+        <!--Teste de seletores de texto-->
+        <h1>Titulo Pagina 1</h1>
+        <p>Finge que é um texto mega elaborado</p>
+
+        <!--Teste de seletores de classes-->
+        <span class="vermelho">Teste Classes</span>
+        <p class="vermelho">Teste classes</p>
+        <p>Classe tambem pode ser feita apenas para um tipo de elemento<span class="teste">Classe Teste funcionando so em span</span></p>
+
+        <hr>
+        <!--Teste de seletores de id-->
+        <p id="Testando">teste id</p>
+
+        <hr>
+
+        <!--Teste de seletores filhos-->
+        <p>Paragrafo normal</p>
+        <ul>
+            <li>
+                <p>Paragrafo Filho de &#60;li&#62;</p>
+            </li>
+            <li>
+                <span><p>Paragrafo Filho de &#60;li&#62; mas tambem filho de uma &#60;span&#62;</p></span>
+            </li>
+            <li>
+                <span><h1>h1 Filho de &#60;li&#62; mas tambem filho de uma &#60;span&#62;</h1></span>
+            </li>
+        </ul>
+
+        <span><h1>h1 Filho de &#60;span&#62; mas nao esta em um &#60;li&#62;</h1></span>
+        <hr>
+
+        <!--Teste de Seleteores descendentes-->
+        <p><a href="">Link dentro de P</a> / <span><a href="">Link dentro de uma span filha de P</a></span></p>
+        <hr>
+
+        <!--Teste de irmaos adjacente-->
+        <h2>h2</h2>
+        <p>Primeiro P apos h2</p>
+        <p>segundo P apos h2</p>
+        <hr>
+
+        <!--Teste de irmao geral-->
+        <h3>h3</h3>
+        <p>Primeiro P apos h3</p>
+        <p>segundo P apos h3</p>
+        <h1>eita</h1>
+        <p>terceiro P apos h3</p>
+        <span><p>hmmm</p></span>
+    </body>
+
+</html>
