@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Heranças e Espicifidade</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*Alguns elementos como border e backgrounds não são herdados, como por exemplo border e background*/
+            body{
+                color: red;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                border: 3px dotted violet;
+                background: azure;
+            }
+            /*O ultimo especificado sempre tera prioridade*/
+            p{
+                color: red; /*!important da prioridade maxima ao seletor*/ 
+            }
+
+            p{
+                color: blue;
+            }
+
+            /*O seletor que tem a regra mais especifica tera prioridade
+            ID >>> Class >>> normal*/
+
+            .Pagina p{
+                color: black;
+            }
+            
+            p{
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Quando se aplica uma formatação, os elementos filhos vao HERDAR elas-->
+        <div class="Pagina">
+            <h1>Code Geass: Hangyaku no Lelouch R1 e R2</h1>
+            <p>Um dos melhores animes que eu ja vi, tem um roteiro foda com um protagonista com complexo de deus mas que consegue ainda ter empatia pelos outros e nao pensar apenas em si mesmo(por masi que no começo ele tava fazendo por vingança)
+
+                Anime sensacional cara recomendo demais
+            </p>
+            <p>r1 comecei dia 09/05/21 e terminei dia 12/05/21 r2 comecei 13/05/21 e terminei 15/05/21
+                
+                7/10 o r1 e 8/10 o r2
+            </p>
+        </div>
+
+    </body>
+</html>
