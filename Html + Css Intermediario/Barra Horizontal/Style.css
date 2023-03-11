@@ -1,0 +1,42 @@
+ul{
+    list-style: none;
+    width: fit-content;
+    background: #159cb0 url(imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+li{
+    float: left;
+}
+
+ul,li{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    margin: 0px 4em;
+}
+
+
+
+ul a{
+    display: block;
+    line-height: 2.2em;
+    color: white;
+    text-decoration: none;
+    background: url(imagens/divisor.png) repeat-y;
+}
+
+ul .primeiro a{
+    background: none;
+}
+
+ul a:hover,
+#home #Barra-Horizontal .home a,
+#sobre #Barra-Horizontal .sobre a,
+#contatos #Barra-Horizontal .contatos a,
+#faq #Barra-Horizontal .faq a{
+    color: #085662;
+    background: #44cade;
+}
