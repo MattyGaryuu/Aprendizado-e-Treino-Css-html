@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Layout de largura fixa</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: #f2f2f2;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            ul{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
+                width: 80px;
+                height: 40px;
+                line-height: 40px;
+                display: block;
+                font-size: 20px;
+                padding: 0px 30px;
+                background: url(../Barra-Vertical/Imagens/menu.png) no-repeat left center;
+            }
+
+            a:hover,#atual{
+                background-position: right center;
+                background-color: #f99200;
+                color: white;
+            }
+
+            #container{
+                width: 720px;
+                margin: 0 auto;
+                background: white;
+            }
+
+            #Marca{
+                height: 100px;
+                line-height: 100px;
+                text-align: center;
+                font-size: 3em;
+                background: gray;
+            }
+
+            #Conteudo{
+                width: 520px;
+                float: right;
+            }
+
+            #navegacao{
+                width: 80px;
+                float: left;
+                background: #d1d1d1;
+            }
+
+            #rodape{
+                clear: both;
+                background: #c4c4c4;
+                padding: 5px;
+                line-height: 2em;
+                text-align: center;
+            }
+
+            #Principal{
+                float: left;
+                width: 320px;
+            }
+
+            #Principal{
+                float: right;
+                width: 180px;
+                background: #d1d1d1;
+                padding: 0px 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="container">
+            <div id="Marca">Carlinhos</div>
+            <div id="Conteudo">
+                <div id="Principal">
+                    <h2>Extra Extra Recorde Mundial batido</h2>
+                    <p>Nessa manha de segunda feira, Carlos, o maior corinthiano de todos os tempos, deu a bunda para mais um homem e quebrou o recorde mundial de dar a bunda.</p>
+                    <p>Ao todo, Carlinhos, como eh conhecido, deu a bunda para 2050 homens diferentes.</p>
+                </div>
+
+                <div id="Secundario">
+                    <h2>Dalva</h2>
+                    <p>A Dalva bebe porra, a Dalva de mini saia sem calcinha, Dalva, você é uma puta! Dalva! A Dalva foi comida por 2050 homens diferentes!</p>
+                </div>
+            </div>
+            <div id="navegacao">
+                <ul>
+                    <li><a href="" id="atual">Home</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div id="rodape">Todos Direitos Reservados a minha mãe</div>
+        </div>
+    </body>
+</html>
