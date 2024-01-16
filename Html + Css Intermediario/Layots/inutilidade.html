@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Layout de largura fixa</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: #f2f2f2;
+            }
+
+            h2{
+                text-align: center;
+                padding: 20px;
+            }
+
+            p{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #Secundario h2{
+                text-align: center;
+                padding: 5px 10px;
+                font-size: 20px;
+            }
+
+            #Secundario p{
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+
+            .img-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .imgmat{
+                border: 2px solid rgba(0, 0, 0, 0.5);
+                max-width: 90%;
+            max-height: 90%;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            ul{
+                padding: 0px;
+                margin: 0px;
+            }
+
+            a{
+                text-decoration: none;
+                padding: 10px;
+            }
+
+            #container{
+                width: 920px;
+                margin: 0 auto;
+                background: #fff url(coluna.png) repeat-y;
+            }
+
+            #marca{
+                height: 100px;
+                background: #9e9e9e;
+                text-align: center;
+                line-height: 100px; /*Centralizar texto*/
+            }
+
+            #conteudo{
+                width: 700px;
+                float: right;
+                line-height: 35px;
+                text-align: justify;
+                
+            }
+
+            #navegação{
+                width: 200px;
+                float: left;
+                text-align: center;
+            }
+            
+            #rodapé{
+                height: 50px;
+                clear:both;
+                text-align: center;
+                background: #9e9e9e;
+                line-height: 50px;
+            }
+
+            #Principal{
+                float: left;
+                width: 420px;
+            }
+
+            #Secundario{
+                float: right;
+                width: 280px;
+                background: #d3d3d3;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <!-- Para a acessibilidade de um leitor com deficiencia, é prefirivel que o conteúdo seja definido em html antes da navegação, para que seja lido antes-->
+        <div id="container">
+            <div id="marca"><h1>CORINTHIANS PAI DOS MUNDIAIS</h1></div>
+            <div id="conteudo">
+                <div id="Principal">
+                    <h2>Gil expõe sobre sua passagem pelo corinthians</h2>
+                    <p>
+                        “Sem nenhuma mágoa,  mas agora é página virada. As coisas acontecem naturalmente. Fui muito feliz no Corinthians, fiz grandes amigos, só fica o carinho e respeito.”
+                        <br>🎙️| Gil
+                        <br>📸 [Divulgação]
+                    </p>
+                    <div class="img-container"><img src="https://pbs.twimg.com/media/GD_ESzFXcAAH8W3?format=jpg&name=small" alt="A foto se trata do gil com a camisa do santos olhando para frente" class="imgmat"></div>
+                    
+                </div>
+
+                <div id="Secundario">
+                    <h2>A dupla de ataque mais bonita do bostil</h2>
+                    <div class="img-container"><img src="https://pbs.twimg.com/media/GD_NpR9XAAA5ZdW?format=jpg&name=small" alt="A foto se trata do gil com a camisa do santos olhando para frente" class="imgmat"></div>
+                    <p>
+                        Corinthians esté em negociação avançada com Pedro Raul, do tolusca do méxico e está prestes a criar a dupla mais modelo da historia do brasileirão.
+                    </p>                    
+                </div>
+            </div>
+            <div id="navegação">
+                <ul>
+                    <li><a href="Largura-Fixa.html" id="atual">La ele</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC1BhuXsCzg0IkLpbu83brKg">Youtube</a></li>
+                    <li><a href="https://staticg.sportskeeda.com/editor/2023/01/9487f-16728933915704-1920.jpg">Pai dos animes</a></li>
+                </ul>
+            </div>
+            <div id="rodapé">Todos direitos reservados ao vendedor de icegurt que ficava do lado da minha escola do fundamental.</div>
+        </div>
+
+    </body>
+</html>
