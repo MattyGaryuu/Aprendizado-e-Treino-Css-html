@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Formulario Estilizado</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: #ffffff69;
+                background-image: url(https://i0.wp.com/metagalaxia.com.br/wp-content/uploads/2023/09/Gojo-morto.jpg?resize=1024%2C748);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:cover;
+            }
+
+            fieldset{
+                border: 1px solid #999;
+                margin-bottom: 50px;
+                background-color: #ffffffaf;
+            }
+
+            legend{
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #fff;
+                -webkit-text-stroke: 1px #000;
+                font-size: 20px;
+                
+            }
+
+            form{
+                margin: 0 auto;
+                width: 50%;
+            }
+
+            div{
+                padding: 15px 10px;
+            }
+
+            label{
+                display: block;
+                cursor: pointer;
+            }
+
+            input[type="text"]{
+                width: 80%;
+                height: 30px;
+            }
+
+            textarea{
+                width: 90%;
+                height: 300px;
+            }
+
+            #exemplo{
+                text-align: center;
+                color: #fff;
+                -webkit-text-stroke: 1px #000;
+                font-size: 40px;
+            }
+
+            #text-area{
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+
+        <h2 id="exemplo">Nova postagem</h2>
+
+        <form>
+            <fieldset>
+                <legend>Dados primario da postagem</legend>
+
+                <div>
+                    <label for="titulo">Titulo da postagem:</label>
+                    <input type="text" name="titulo" id="titulo" placeholder="Digite o nome da postagem...">
+                </div>
+
+                <div>
+                    <label for="autor">Nome do autor:</label>
+                    <input type="text" name="titulo" id="autor" placeholder="Digite o nome do autor...">
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Conteúdo da postagem</legend>
+
+                <div id="text-area">
+                    <textarea name="titulo" id="autor" placeholder="Digite o conteúdo da postagem..."></textarea>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </body>
+
+</html>

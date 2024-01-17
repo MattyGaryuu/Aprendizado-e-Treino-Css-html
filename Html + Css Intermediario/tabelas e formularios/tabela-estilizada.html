@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tabela Estilizada</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background: #fff;
+            }
+
+            th{
+                border-top: 1px solid #999;
+                border-bottom: 1px solid #111;
+                padding: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+            }
+
+            td{
+                border-left: 1px solid black;
+            }
+
+            td, th{
+                padding: 10px;
+                text-align: center;
+                border-right: 1px solid black;
+            }
+
+            .table-players{
+                width: 50%;
+                border-collapse: collapse;
+            }
+
+            .alternada{
+                background-color: #cccccc;
+            }
+
+            .item:hover {
+                background-color: aqua;
+            }
+
+            #first-th{
+                border-left: 1px solid black;
+            }
+
+            #last-td{
+                border-bottom: 1px solid #999;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Exemplo de tabela estilizada</h2>
+
+        <table class="table-players">
+            <tr>
+                <th id="first-th">Nome</th>
+                <th>Posição</th>
+                <th id="last-th">Idade</th>
+            </tr>
+
+            <tr class="alternada item">
+                <td>Yuri Alberto</td>
+                <td>Centro-Avante</td>
+                <td>22</td>
+            </tr>
+
+            <tr class="item">
+                <td>Cassio</td>
+                <td>Goleiro</td>
+                <td>36</td>
+            </tr>
+
+            <tr class="alternada item">
+                <td>Matia Rojas</td>
+                <td>Meia</td>
+                <td>28</td>
+            </tr>
+
+            <tr class="item">
+                <td>Rodrigo Garro</td>
+                <td>Meia</td>
+                <td>26</td>
+            </tr>
+
+            <tr id="last-td" class="alternada item">
+                <td>Fagnuggets</td>
+                <td>Lateral Direito</td>
+                <td>33</td>
+            </tr>
+        </table>
+
+    </body>
+
+</html>

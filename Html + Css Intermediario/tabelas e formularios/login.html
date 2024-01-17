@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-image: url(https://images5.alphacoders.com/993/993903.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            form{
+                display: flex;
+                margin: auto auto;
+                text-align: center;
+                height: 85vh; /* 100% da altura da viewport */
+            }
+
+            fieldset{
+                border: 0px;
+                width: 30%;
+                min-width: 500px;
+                height: 500px;
+                margin: auto;
+                background-color: #ffffff41;
+                border-radius: 40px;
+            }
+
+            input[type="text"]{
+                width: 80%;
+                height: 40px;
+                padding-left: 40px;
+                border: 0px;
+                border-radius: 20px;
+            }
+
+            input{
+                width: 30%;
+                height: 40px;
+                margin-top: 40px;
+                background-repeat: no-repeat;
+                background-position: 11px;
+            }
+
+            input#username{
+                background-image: url(icone-usuario.png);
+            }
+
+            input#password{
+                background-image: url(icone-cadeado.png);
+            }
+            
+            input#login:hover{
+                background-color: orange;
+                background: linear-gradient(to bottom, orange, rgb(255, 189, 67));
+            }
+
+            div{
+                margin-top: 20px;
+            }
+            #logo{
+                width: 32%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="logo.png" id="logo"></a></legend>
+                
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Nome de usuario">
+                </div>
+
+                <div>
+                    <input type="text" name="password" id="password" placeholder="Senha">
+                </div>
+
+                <div>
+                    <input type="submit" id="login" value="login">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
