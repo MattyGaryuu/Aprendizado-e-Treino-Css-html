@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    background: #fff url(../source/bg.png);
+    margin: 15px;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+#container{
+    background: #ede9cc;
+    margin: 0 auto;
+    min-width: 1319px;
+    max-width: 1280px;
+}
+
+#header{
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px;
+    position: relative;
+}
+
+#logo{
+    position: absolute;
+    background: url(../source/topo-principal.png) no-repeat;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+#menu{
+    position: absolute;
+    background: url(../source/topo-imagem-lateral.png);
+    width: 450px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    z-index: 3
+}
+
+#logo h1 a{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    background: url(../source/logo.png) no-repeat;
+    background-size: cover;
+    width: 288px;
+    height: 171px;
+    text-indent: -9000px;
+}
+
+#inside-menu{
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#locals{
+    border-top: 1px solid #b5ab56;
+    border-bottom: 1px solid #b5ab56;
+    padding: 7px 0px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+#locals span{
+    padding-left: 15px;
+    font-size: 12px;
+    color:#726b46;
+}
+
+#locals a{
+    margin-left: 12px;
+    padding: 5px;
+    color: #726b46;
+    background: #b5ab56;
+    
+}
+
+#navegação{
+    margin-top: 20px;
+    float: left;
+}
+
+#navegação ul li{
+    margin-bottom: 15px;
+   
+}
+
+#navegação ul li a{
+    color: #726b46;
+    padding: 7px;
+}
+
+#navegação ul li a:hover{
+    color: #726b46;
+    background-color:#ede9cc;
+}
+
+#review{
+    position: absolute;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 15px;
+    float: right;
+}
+
+#main{
+    float: left;
+    background: #fff2a8;
+    width: 50%;
+    height: 540px;
+}
+
+#main h2{
+    text-align: center;
+    color: #726b46;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+#lateral{
+    float: right;
+    background: #dac976;
+    width: 50%;
+    height: 540px;
+}
+
+#main p{
+    padding: 15px;
+    padding-bottom: 5px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#features{
+    clear: both;
+    padding: 25px;   
+}
+
+#features img{
+    display: block;
+    float: left;
+    width: 35%;
+    margin: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+
+#features h3{
+    padding: 5px;
+    color:#726b46;
+}
+
+#feature-text{
+    padding-top: 15px;
+    height: 75px;
+}
+
+
+.conteudo{
+    margin-top: 8px;
+}
