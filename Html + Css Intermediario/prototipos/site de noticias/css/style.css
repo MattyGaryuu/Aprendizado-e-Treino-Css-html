@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: white;
+}
+
+ul{
+    list-style: none;
+}
+
+hr{
+    border-top: 2px solid black;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    text-align: justify;
+    padding-left: 10px;
+}
+
+h4{
+    text-align: justify;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.header-area{
+    width: 100%;
+    min-width: 1920px;
+    height: 200px;
+    background: black;
+    color: white;
+}
+
+.header{
+    min-width: 720px;
+    width: 60%;
+    height: 174px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 119px;
+    height: 139px;
+    background: url(../source/logo.png) no-repeat;
+    background-size: cover;
+    text-indent: -3000px;
+    display: flex;
+    float: left;
+}
+
+.imgnew{
+    width: 150px;
+    float: right;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-right: 55px;
+}
+
+.minip{
+    float: left;
+    width: 60%;
+}
+
+.noticia h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight:600;
+    float: left;
+    width: 60%;
+}
+
+.noticia{
+    height: 150px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+}
+
+
+#FKNews{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#navegação{
+    margin: 0 auto;
+    text-align: center;
+    line-height: 120px;
+}
+
+#navegação li{
+    display: inline-block;
+    margin-left: 1em;
+    border-radius: 10px;
+    width: 200px;
+    background: red;
+
+}
+
+#navegação li a{
+    font-size: 1.2em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: white;
+}
+
+#navegação li a:hover, body.home #navegação a#home, body.last #navegação a#last,
+body.sports #navegação a#sports, body.youtube #navegação a#youtube{
+    background-color: rgb(146, 0, 0);
+    border-radius: 10px;
+}
+
+#conteudo{
+    margin: 10px auto;
+    width: 1152px;
+    height: 910px;
+}
+
+#destaque, #destaque2{
+    background: linear-gradient(to bottom,rgb(255, 0, 0),rgb(253, 104, 104));
+    font-size: 20px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#destaque{
+    width: 300px;
+}
+
+#destaque2{
+    width: 200px;
+}
+
+
+#nodestaque{
+    text-align: center;
+}
+
+#imgdestaque{
+    margin: 0px auto;
+    width: 85%;
+}
+
+#main{
+    margin-top: 30px;
+    width: 60%;
+    float: left;
+}
+
+#mundial{
+    margin-top: 30px;
+    float: right;
+    width: 36%;
+    height: 100%;
+}
+
+#rodapé{
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    clear: both;
+    background-color: black;
+    display: block;
+}
+
