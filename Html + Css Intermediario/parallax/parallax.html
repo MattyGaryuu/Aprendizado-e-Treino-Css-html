@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <title>Parallax</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+            @font-face {
+                font-family: "naruto";
+                src: url(njnaruto.woff);
+            }
+
+            body, html{
+                margin: 0;
+                font: 16px "lato", "sans-serif";
+                color: #777;
+                height: 100%;
+            }
+
+            .conteudo{
+                color: #777;
+                background-color: wheat;
+                text-align: justify;
+                padding: 50px 80px;
+            }
+
+            h3{
+                text-transform: uppercase;
+                color: #111;
+                text-align: center;
+            }
+
+            p{
+                padding: 10px;
+                text-align: justify;
+            }
+
+            .generic{
+                height: 100%;
+                background: white no-repeat top left;
+                background-size:cover;
+                background-attachment:fixed; /*Responsavel pelo parallax*/
+                /*Centralizar texto com display*/
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font: 16px "naruto", "sans-serif";
+            }
+
+           /* #conteudo-titulo{
+                Centralioar com absolute
+                position: absolute;
+                left: 0%;
+                top: 40%;
+                width: 100%;
+
+                text-align: center;
+            }
+*/
+            .generic span{
+                background: rgba(255, 255, 255, 0.7);
+                border-radius: 10px;
+                font-size: 100px;
+                color: black;
+                padding: 10px;
+            }
+
+            
+            .imagem1{
+                background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*ZqclVMZvduo209PpHgHDaw.jpeg);
+            }
+
+            .imagem2{
+                background-image: url(https://scontent.fssz1-1.fna.fbcdn.net/v/t39.30808-6/419858504_1558352251651974_8074723611458874113_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=c42490&_nc_eui2=AeHsaXyfOpHjZIfqTFxf7ZaQlSruyHQX842VKu7IdBfzjXl9-Z2A0pcI0Bj-rFw7Q0H1syJ-7coJtM1usD-XrOKz&_nc_ohc=OZaxbUidJwIAX9SaJG0&_nc_ht=scontent.fssz1-1.fna&oh=00_AfC7u3iDSnAxrQ5RVfsQgMLKhbrN5kJzYZkdRkWMQanKGg&oe=65B01CEB);
+            }
+
+            .imagem3{
+                background-image: url(https://criticalhits.com.br/wp-content/uploads/2023/10/Kagurabachi-1-696x392.jpg);
+                /*opacity: 0.4;*/
+            }
+
+            .imagem4{
+                background-image: url(https://hqbr.com.br/wp-content/uploads/2022/12/tokyo-ghoul-haise-sasaki-manga-1400x700-1.gif);
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="imagem1 generic">
+            <div id="conteudo-titulo">
+                <span>Tohru Honda</span>
+            </div>
+        </div>
+
+
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>Ozzy Osbourne em entrevista ao jornalista André Barcinski sobre o Rock in Rio.</p>
+            <p>Quais suas lembranças do Rock In Rio, em 85?</p>
+            <p>Foi muito divertido. Só me decepcionei um pouco porque achei que ia ver um monte de mulheres lindas no Rio...</p>
+            <p>Mas não me diga que você não conheceu nenhuma mulher bonita no Rio?</p>
+            <p>Não deu, minha esposa me deixou trancado no quarto do hotel (risos). Ela estava com medo dos assaltos. O porteiro do hotel falou para tomarmos cuidado.</p>
+            <p>Mas você não chegou a conhecer nada do Rio?</p>
+            <p>Só deu para visitar o Cristo Redentor, que é muito legal. Mas aconteceu uma coisa engraçada. Um fotógrafo quis me levar para fazer umas fotos numa cachoeira e quando nós chegamos lá eu vi estendido no chão um monte de pratos cheios de frutas. Estava morrendo de fome, então eu fui comer uma delas. Aí, todo mundo ficou apavorado. O tal do fotógrafo só faltou chorar. Até hoje não entendi por quê.</p>
+            <p>Depois que o jornalista explicou para Ozzy que aquela fruta era uma oferenda de macumba, ele falou: “Então estou amaldiçoado para sempre” e se acabou em gargalhadas.</p>
+            <p>Foto, Ozzy Osbourne e Jake E. Lee no Cristo Retendor, Rio de Janeiro, Brasil, 1985.</p>
+        </div>
+
+        <div class="imagem2 generic">
+            <div class="conteudo-titulo">
+                <span>Ozzy Osbourne no rio</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>KaguraBacchi</h3>
+            <p>O MELHOR SHOUNEN DA HISTORIA</p>
+        </div>
+
+        <div class="imagem3 generic">
+            <div class="conteudo-titulo">
+                <span>Chihiro</span>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Tokyo Ghoul</h3>
+            <p>O MELHOR SEINEN DA HISTORIA</p>
+        </div>
+
+        <div class="imagem4 generic">
+            <div class="conteudo-titulo">
+                <span>Kaneki Ken</span>
+            </div>
+        </div>
+    </body> 
+
+</html>
