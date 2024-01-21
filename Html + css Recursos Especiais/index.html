@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Recursos especiais</title>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        
+        <style type="text/css">
+           
+
+            .box{
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+             /*Border Radius e box sizing*/
+            .box div{
+                height: 700px;
+                width: 700px;
+                background-color: bisque;
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 10px;   
+                text-align: center;
+            }
+
+            #border-box{
+                box-sizing: border-box; /*impede que a div utilize pixels adicionais no padding, utilziando examaente a width e height definida*/
+            }
+
+            img{
+                width: 300px;
+                height: 350px;
+                border-radius: 0px 40px 90px 150px;
+                -webkit-border-radius: 0px 40px 90px 150px;
+                -moz-border-radius: 0px 40px 90px 150px;
+            }
+
+
+             /*degrade*/
+            #degrade{
+                background: linear-gradient(to right bottom, rgb(255, 138, 138),bisque);
+                box-sizing: border-box;
+            }
+
+            /*Sombra*/
+            #sombra{
+                box-shadow: 4px 4px rgba(0, 0, 0, 0.171);
+            }
+
+            #sombra img{
+                width: 300px;
+                height: 250px;
+                box-shadow: 0px 0px 50px 10px black;
+            }
+
+            #sombra h1{
+                text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+            }
+
+            /*Animação*/
+            @keyframes animacao-caixa{
+                from{
+                    background: red;
+                    
+                }
+
+                to{
+                    background: rgb(201, 107, 126);
+                    transform: translateX(20px);
+                }
+            }
+
+            @-webkit-keyframes animacao-caixa{
+                from{
+                    background: red;
+                    
+                }
+
+                to{
+                    background: rgb(201, 107, 126);
+                    transform: translateX(20px);
+                }
+            }
+
+            @-moz-keyframes animacao-caixa{
+                from{
+                    background: red;
+                    
+                }
+
+                to{
+                    background: rgb(201, 107, 126);
+                    transform: translateX(20px);
+                }
+            }
+
+            @-o-keyframes animacao-caixa{
+                from{
+                    background: red;
+                    
+                }
+
+                to{
+                    background: rgb(201, 107, 126);
+                    transform: translateX(20px);
+                }
+            }
+
+            #animação{
+                /*
+                animation-name: animacao-caixa;
+                animation-duration: 2s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;*/
+
+                animation: animacao-caixa 2s linear infinite alternate;
+                -webkit-animation: animacao-caixa 2s linear infinite alternate;
+                -moz-animation: animacao-caixa 2s linear infinite alternate;
+                -o-animation: animacao-caixa 2s linear infinite alternate;
+            }
+
+            #animação img{
+                width: 400px;
+                height: 400px;
+                margin-top: 60px;
+            }
+
+            /*Transição*/
+
+            #transição{
+                background: orange;
+                width: 700px;
+            }
+
+            #transição:hover{
+                background: white;
+                width: 100px;
+                /*transition: background 3s, width 3s;*/
+                transition: all 2s;
+                
+
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div id="border-box">
+                <h1>Border Radius e box sizing</h1>
+                <p>
+                    Oh, Darwin Núñez, where have you gone
+                    <br>Liverpool's winning and I need a Cody Gakpo
+                    <br>So, tell me Salah, when are we gonna win the league
+                    <br>I'm getting Van Dijk, and I need to be with my reds
+                    <br>And if you bring with Henderson, he can score
+                    <br>Talk about Darwin scoring hat tricks, this could be end of Man United
+                    <br>So why don't we go to the FA Cup game
+                </p>
+                <img src="https://preview.redd.it/darwin-nunez-the-goat-v0-btmhzwu6f8sa1.jpg?width=640&crop=smart&auto=webp&s=2be18e9b2c862629c85b7f079129efdfd364627b">
+
+
+            </div>
+            
+            <div id="degrade">
+                <h1>Degradês e transparencia</h1>
+                <p>
+                    cenas lamentaveis no jogo santos vs botafogo-sp<br>
+                    dois jogadores aproveitaram de um exploit do mundo e DISTORCERAM O ESPAÇO TEMPO ao vivo<br>
+                    LAMENTAVEL ESSA CENA, federação paulista TEM que tomar uma medida sobre isso<br>
+                </p>
+                <img src="https://scontent.fssz1-1.fna.fbcdn.net/v/t39.30808-6/420642828_1571551043674649_6389080710710844478_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=c42490&_nc_eui2=AeH9Z92pxZ4lblslJ8ekTAitX6Dfd1cUbfZfoN93VxRt9r87FRDv1iBQsdjSZt2ZZYLW1-zJAK-gKyF7JjsFptQO&_nc_ohc=3ayMs_KnXdwAX9pZKBK&_nc_ht=scontent.fssz1-1.fna&oh=00_AfDxxoq4q69YrQUcItILRsW__VFNMGqDyFJeXoCS1AqAFg&oe=65B2C2BE">
+
+
+            </div>
+
+            <div id="sombra">
+                <h1>Sombra</h1>
+                <p>
+                    Eu cresci como um prodígio do clã Uchiha
+                    <br>O melhor entre os melhores na Vila da Folha
+                    <br>Por ter crescido na guerra, criei fortes ideais
+                    <br>Eu ouvi que uma revolução se iniciaria
+                    <br>E eu sei bem o quanto a guerra machuca pessoas
+                    <br>Quanto sangue vamos derramar até finalmente alcançar a paz?
+                    <br>O meu clã queria uma rebelião
+                    <br>E meus pais sabiam que eu tinha uma missão
+                    <br>
+                    <br>É que pra poder vermos a luz
+                    <br>Antes temos que estar no meio das trevas
+                    <br>Minha missão era assassinar meu clã
+                    <br>Pra impedir o começo de uma nova guerra
+                    <br>Eu aceitei, mas com uma condição
+                    <br>Eu não tirarei a vida do meu irmão
+                    <br>Ele poderá crescer pra escapar da maldição
+                    <br>Se Sasuke puder viver, os Uchihas a morte conhecerão
+                </p>
+                <img src="https://static.wikia.nocookie.net/naruto/images/2/24/Itachi-Uchiha.png/revision/latest?cb=20181104200812&path-prefix=pt-br">
+
+
+            </div>
+
+            <div id="animação">
+                <h1>Animação</h1>
+                <p>
+                    chefe: hoje o almoço é por minha conta, o que vocês vão querer?
+                    <br>"Pizza" 
+                    <br>"Sushi"
+                    <br>Eu: *suspeitando de que o Wesley do RH é um Carrapato-Estrela* que tal sangue de capivara??
+                    <br>Eu olhando pro Wesley para ver sua reação:
+                </p>
+                <img src="69616b4b-ff92-45ec-a005-c77fd5d4c2fd.jpg">
+
+
+            </div>
+
+            <div id="transição">
+                <h1>Transição</h1>
+                <p>
+                    Agora pronto, virou zoológico, depois da cobra no meu quarto, agora caiu uma caranguejeira enorme na minha cara, ela tinha um palmo e uns 3 dedos, pra minha sorte eu não tava dormindo e tive reflexo rápido de insta pular quando senti a queda
+
+                </p>
+                <img src="https://pbs.twimg.com/media/GEZx1jGWUAAzj7r?format=jpg&name=small" style="margin-top:60px; height:350px; width: 350px;";>
+
+
+            </div>
+        </div>
+        
+    </body>
+</html>
