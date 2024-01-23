@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        
+        <!--[if lt IE 9]>
+	        <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+        <![endif]-->
+        
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+                padding: 10px;
+                text-decoration: none;
+            }   
+
+            #conteudo{
+                background: gray;
+                height: 400px;
+                width: 300px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; /*Quebra de flex para caber no container*/
+                justify-content: center; /*horizontal*/
+                align-items: center; /*Vertical*/
+            }
+
+            .item{
+                background: white;
+                border: 1px solid black;
+                margin: 10px;
+                width: 100px;
+                height: 100px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Flexbox</h1>
+        <div id="conteudo">
+            <div class="item">01</div>
+            <div class="item">02</div>
+            <div class="item">03</div>
+            <div class="item">04</div>
+        </div>
+    </body>
+</html>

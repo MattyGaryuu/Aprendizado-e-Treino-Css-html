@@ -4,6 +4,10 @@
         <title>Novas Tags</title>
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         
+        <!--[if lt IE 9]>
+	        <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+        <![endif]-->
+        
         <style type="text/css">
             *{
                 box-sizing: border-box;
@@ -26,7 +30,7 @@
                 background: bisque;
                 float: left;
                 width: 70%;
-                height: 700px;
+                height: 1300px;
             }
 
             section{
@@ -40,7 +44,31 @@
                 background: gold;
                 float: right;
                 width: 30%;
-                height: 700px;
+                height: 1300px;
+            }
+
+            input{
+                margin-left: 5px;
+            }
+
+            input[type="submit"]{
+                margin: 0px;
+            }
+            
+            #number{
+                margin-left: -10px;
+            }
+
+            #url{
+                margin-left: 20px;
+            }
+
+            #search{
+                margin-left: 1px;
+            }
+
+            #date{
+                margin-left: 15px;
             }
         </style>
     </head>
@@ -71,6 +99,37 @@
             <section>
                 <h1>OOOOO</h1>
                 <p>Sessoes para artigos <time>21/01/2024</time></p>
+            </section>
+
+            <section>
+                <h1>inputs</h1>
+                <form>
+                    <label for="username">Name: </label>
+                    <input type="text" name="username" id="username" required="required" autofocus="autofocus"> <br> <br>
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required="required"> <br> <br>
+
+                    <label for="number">Number: </label>
+                    <input type="number" name="number" id="number" min="1" max="10"> <br> <br>
+
+                    <label for="url">Url: </label>
+                    <input type="url" id="url" placeholder="ex: https://www.resenha.com"> <br> <br>
+
+                    <label for="search">search: </label>
+                    <input type="search" name="search" id="search"> <br> <br>
+
+                    <label for="number">Range: </label>
+                    <input type="range" name="range" id="range" min="5" max="50"> <br> <br>
+
+                    <label for="number">date: </label>
+                    <input type="date" id="date" > <br> <br>
+
+                    <label for="number">Color: </label>
+                    <input type="color" id="color" > <br> <br>
+
+                    <input type="submit" name="" value="Enviar">
+                </form>
             </section>
 
             
