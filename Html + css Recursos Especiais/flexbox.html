@@ -30,7 +30,7 @@
                 background: white;
                 border: 1px solid black;
                 margin: 10px;
-                width: 100px;
+                flex-basis: 100px;
                 height: 100px;
             }
 
@@ -40,10 +40,10 @@
     <body>
         <h1>Flexbox</h1>
         <div id="conteudo">
-            <div class="item">01</div>
-            <div class="item">02</div>
-            <div class="item">03</div>
-            <div class="item">04</div>
+            <div class="item" style="order: 1">01</div>
+            <div class="item" style="order: 0">02</div>
+            <div class="item" style="order: 3">03</div>
+            <div class="item" style="order: 2">04</div>
         </div>
     </body>
 </html>
