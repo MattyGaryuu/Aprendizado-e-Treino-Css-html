@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Design Responsivo - floating</title>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link href= "../bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+	        <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+            body{
+                margin-bottom: 16px;
+                padding: 16px;
+                background-color: bisque;
+            }
+
+            .red{
+                background-color: red;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        
+        <!--elementos flutuantes-->
+        <div class="clearfix sticky-top" style="border: 1px solid red;"> <!--Se tiver um float como parente, a classe clearfix faz a div ajustar a altura que eles ocupam-->
+            <div class="float-start bg-warning">float esquerdo</div>
+            <div class="float-end bg-success">float direito</div>
+            <div class="d-flex justify-content-center align-self-center"><div class="red d-inline">Centro</div></div>
+        </div>
+
+        <!--Posicionamento fixo-->
+        <h1 class=""> TA OLHANDO O QUE? QUER TOMAR GOL??</h1>
+        <p class="">
+            Carlinhos, atacante do Nova Iguaçu, é o artilheiro do Carioca.
+            Marcou 5 gols em 5 jogos
+            Cravou no Flamengo, Vasco e Botafogo (2). Alem do Sampaio Correa.
+            CRIA DO TERRÃO 🔥🔥🔥
+        </p>
+
+        <h2 class="h2 bg-success fixed-bottom">Messi</h2>
+       
+
+        <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+      </body>
+      
+</html>

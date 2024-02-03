@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Design Responsivo</title>
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link href= "../bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+	        <script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+            body{
+                margin-bottom: 16px;
+                padding: 16px;
+                background-color: bisque;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Hello, world!</h1>
+        <h2>Hello, world!</h2>
+        <h3>Hello, world!</h3>
+        <h4 class="h2">Hello, world!</h4>
+        <br>
+        <br>
+
+        <h1 class="display-1">Hello, world!</h1>
+        <h1 class="display-2">Hello, world!</h1>
+        <h1 class="display-3">Hello, world!</h1>
+        <h1 class="display-4">Hello, world!</h1>
+
+        <br>
+        <br>
+        <p class="lead text-monospace" >⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿Nah id win⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿</p>
+        <p style="width: 750px; background-color: blue; color: white;" class="lead text-monospace">
+            ⣿⣿⣿⣦⡙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⣡⣾⣿⣿
+            ⣿⣿⣿⣿⣿⣶⣌⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⢋⣴⣾⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣶⣿⣦⣌⡙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣼⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⢆⣤⣵⣦⣬⣉⡛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⡉⠻⣿⣿⣿⣿⠿⣿
+            ⣿⣿⣿⣿⣿⢋⢧⣩⣥⣤⣭⡍⠉⢉⣉⠿⢷⣄⢐⣦⣀⡀⣬⣍⢍⠩⣭⣭⣥⡄⣴⣌⡙⠿⣿⣿⣿⣿⣿⣿⣿⠀⣬⣅⡈⠻⡿⠗⠢⣸
+            ⣿⣿⣟⣫⣭⡡⢝⡒⢋⡐⠀⢒⠲⣦⡉⠃⡀⢾⣷⣌⣻⣷⣜⢻⣷⡀⠘⣿⣿⡆⢸⣿⢀⡶⣌⠛⢿⣿⣿⣿⣿⠘⠒⠒⠒⡂⠄⢠⣾⣿
+            ⣿⣿⣿⣿⣿⣮⣤⡚⠀⡞⢓⠶⣦⣽⡷⣻⣮⠌⣿⣟⡹⣿⣿⡄⡹⣷⠀⢸⣿⠁⣿⡧⡼⢡⣿⠃⢰⡌⠛⢿⡏⠠⢥⡤⢄⣠⣴⣿⣿⣿
+            ⣿⣿⣿⣿⣿⡿⡋⢵⠪⢤⣘⡀⠻⣿⡠⡱⡹⣷⣼⣿⠀⢹⣿⣿⡀⠘⣰⣦⣿⢀⣿⠐⠡⡵⠃⢂⡎⠊⣙⣦⠄⢴⡠⢀⢌⠙⢿⣿⣿⣿
+            ⡟⢙⣻⡿⠫⢐⣒⣛⠻⣉⣽⣿⣾⠈⠓⠕⢜⢦⡈⠻⢧⡀⢹⣿⣷⡄⣹⣿⡿⣹⣭⣦⡲⠒⣴⠛⠸⠦⣠⣉⠣⣴⣈⠘⠳⠝⣦⢙⣿⣿
+            ⣿⣆⠈⠡⢬⠍⠛⠒⣛⢭⢚⣛⣳⣶⢤⣄⣀⠑⠿⣦⣌⡙⢾⣽⣿⣿⣾⠟⢿⣿⣿⣿⣯⣻⣟⣼⣿⡿⠛⠋⢙⠐⢦⡁⢲⡹⣦⡑⣸⣿
+            ⣿⣿⣧⣀⠰⡶⠄⢁⠬⡶⡟⢋⣩⣶⣿⣿⡿⠟⠃⡉⢉⣭⣿⣿⠿⢛⠋⠀⣴⣿⣿⣿⣿⣿⣿⢹⠷⢀⡤⠾⢄⠺⣄⡙⠦⢑⣿⣷⣿⣿
+            ⣿⣿⡟⢋⢄⡰⠔⣚⠏⢀⣤⡞⣵⢿⠟⢉⣠⣴⣾⣿⣿⠿⡯⣠⡴⠃⢐⣽⡟⠫⣠⡾⢯⣼⡇⢸⠰⢸⢰⡶⠡⣁⠪⠛⢤⣜⠿⣿⣿⣿
+            ⣿⠏⠔⡡⣁⠔⢒⠁⠒⠋⠕⣼⠏⠞⣑⣛⢛⠩⡩⢐⠶⣫⠾⠟⡁⣠⠟⣿⠩⠚⣩⡾⡛⡼⠇⢸⠀⣸⢸⢻⠑⢝⠿⣦⠐⣹⣿⣿⣿⣿
+            ⣿⣄⣾⡙⡰⢋⡰⢀⠔⡀⢴⠋⢐⢜⢕⠕⢉⡼⠡⢋⡾⠁⢊⢬⠚⠁⠉⠠⡂⡽⠃⢀⢰⠁⢰⢸⠀⡏⣾⢸⢠⣔⢬⣀⡈⣻⣿⣿⣿⣿
+            ⣿⣿⡿⢆⡰⠫⢂⢁⢰⠸⠆⢀⠊⠀⠰⣫⢀⡣⢱⣋⠤⢒⢁⡰⠊⢐⠀⢄⡞⡠⣪⠂⢢⢣⠗⣼⠀⡇⡿⠈⠜⡙⠋⠉⡍⣿⣿⣿⣿⣿
+            ⣿⣿⣿⡏⢠⠾⠑⠁⠂⠀⠠⡆⡗⠈⠷⡤⢈⠐⠈⡁⡼⡃⣪⠎⠨⣱⠅⢺⡼⣡⡓⢀⠊⣼⠐⠏⡖⢳⡗⠎⡰⠁⡄⠇⢧⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣏⣠⣔⢔⠕⠂⠤⢡⠁⠛⠠⠟⡁⠔⢠⡘⠘⠿⠿⣿⡨⣵⡟⣀⠁⠳⠿⠃⣀⣠⣭⣙⠃⡧⠕⠀⣼⡱⣀⢰⠀⣼⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣟⣫⣤⡕⠄⡀⠈⡇⡄⠀⣰⡈⢀⡁⣙⠁⠙⢳⣦⡈⢱⣿⣿⡴⢃⣴⣾⡛⠄⠙⡉⣀⠠⡇⠆⢱⣿⠀⠈⢢⠂⢿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣋⣴⠁⡞⠀⡇⣶⡸⣷⡘⢷⣌⣸⣵⠀⠿⠧⣸⣿⣿⣗⣼⢿⠇⢰⣮⣾⣴⠟⡄⠀⠀⢸⠏⡴⣠⡡⢳⣮⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⡿⣀⡄⠀⢣⢹⣿⣿⣿⣷⣿⣾⣶⣮⣖⣴⣿⣿⣿⣿⣿⣆⣵⣶⣶⣾⣿⣿⠇⣼⣾⡇⡕⠀⣿⣷⣸⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣩⣾⣷⡈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣷⣿⢙⠀⡄⢿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣇⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⡎⢠⣧⣾⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣸⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠙⢿⣿⣿⣿⣿⣿⣿⣿⣷⣼⣧⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⣎⠻⣿⣿⣛⣛⠿⠿⠿⠿⠿⠿⠿⠿⣟⣛⣽⣿⢟⣵⠃⢸⣿⣿⣿⣿⣿⣿⣽⣾⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢠⢸⣷⡙⢿⣿⣿⣶⣄⣒⣋⣉⣁⣠⣾⣿⣿⠟⣡⣾⠁⠂⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢸⠻⣿⣿⡀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢡⣾⣿⠷⣠⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠀⢸⣯⠊⢻⣷⡀⢌⠻⢿⣿⣿⣿⣿⠟⠋⢠⣿⣿⣿⣿⡇⠸⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⣿⣿⣿⣿⣿⠿⠛⠉⠀⠀⠀⠀⠀⠈⠻⣆⠈⢿⣧⡈⠿⢷⣶⣶⣶⡖⠄⣠⣿⠏⢩⣿⣿⠇⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⣿⡿⠿⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠈⣿⣿⡔⠐⠯⢉⣿⢙⣼⡿⠃⠀⣀⡿⠟⠀⠀⠀⠀⠀⠀⠈⠙⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠷⠀⣃⣿⣷⣾⡟⠀⠄⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠻⠿⣿⣿⣿⣿⣿⣿</p>
+            
+        <!--Blockquote-->
+        
+            <blockquote class="blockquote">
+            <p class="text-capitalize">satoru gojo lembrarei de voce</p>
+            <footer class="blockquote-footer">
+                <cite>Ryomen Sukuna</cite>
+            </footer>
+        </blockquote>
+            
+
+        <!--Truncate-->
+        <p class="text-truncate">R$ 1.65 BILHÃO!
+
+            Atual dívida do Corinthians, por Rozallah Santoro, diretor financeiro do clube, em entrevista exclusiva ao Meu Timão: R$ 1.65 bilhão
+            
+            -> Neo Química Arena - R$ 706 milhões;
+            -> Impostos federais - R$ 550 milhões;
+            -> Curto prazo - R$ 350/400 milhões (sendo R$ 217 com empresários de futebol).
+            
+            "Pensando na dinâmica do dia a dia, não tem nada que atrapalha mais do que abrir o caixa e ter de escolher quem você paga e quem você não paga"
+            
+            "O que não é razoável é que, mais da metade da dívida até o meio do ano (curto prazo), já estivesse vencida"
+            
+            "Se essa dívida (de curto prazo) não fosse com fornecedores que seguem se relacionando com o clube, seria um caso de insolvência, de falência. Não posso ter mais do que metade do meu curto vencido, não consigo operar assim"
+        </p>
+
+        <!--Lista sem estilo-->
+
+        <ul class="list-unstyled">
+            <li>Flecha</li>
+        </ul>
+        <br>
+
+        <!--Lista inline-->
+        <ul class="list-inline">
+            <li class="list-inline-item">adocica</li>
+            <li class="list-inline-item">meu</li>
+            <li class="list-inline-item">amor</li>
+        </ul>
+
+
+
+        <script src="../bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+      </body>
+      
+</html>
